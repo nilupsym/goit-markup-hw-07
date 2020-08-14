@@ -36,7 +36,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .why-img {
@@ -44,6 +44,6 @@
   justify-content: center;
   padding-bottom: 25px;
   padding-top: 25px;
-  background-color: var(--section-background-color);
+  background-color: $section-background-color;
   border-radius: 4px;
 }

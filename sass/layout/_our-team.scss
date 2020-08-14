@@ -6,7 +6,7 @@
 }
 
 .team {
-  background-color: var(--section-background-color);
+  background-color: $section-background-color;
 }
 
 .team-list {
@@ -33,7 +33,7 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .team-list-item-position {
@@ -43,7 +43,7 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .team-social-links-list {
@@ -79,7 +79,7 @@
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .team-social-link:hover .team-social-icon,

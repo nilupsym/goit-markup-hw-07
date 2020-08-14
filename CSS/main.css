@@ -1,28 +1,4 @@
 @charset "UTF-8";
-/* 
-цвет логотипа #000000;
-цвет основного текста #757575;
-цвет заголовка #212121;
-акцент #2196F3;
-фон #FFFFFF;
-фон футер #2F303A;
-фон секции наша команда #F5F4FA;
-цвет ссылок футере rgba(255, 255, 255, 0.6);
- */
-:root {
-  --main-font: "Roboto", sans-serif;
-  --logo-font: "Raleway", sans-serif;
-  --title-color: #212121;
-  --main-text-color: #757575;
-  --section-background-color: #f5f4fa;
-  --footer-background-color: #2f303a;
-  --footer-link-color: rgba(255, 255, 255, 0.6);
-  --accent-color: #2196f3;
-  --main-logo-color: #000000;
-  --footer-logo-color: #ffffff;
-  --element-logo-color: #2196f3;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -36,7 +12,7 @@ html {
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   list-style: none;
 }
@@ -168,7 +144,7 @@ img {
 .modal-form-input:focus + .modal-form-label,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label {
   transform: translate(-26px, -40px);
-  color: var(--accent-color);
+  color: #2196f3;
   font-size: 12px;
   font-weight: 400;
   font-size: 12px;
@@ -181,11 +157,11 @@ img {
 .modal-form-input:not(:placeholder-shown),
 .modal-form-comment:not(:placeholder-shown) {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .modal-form-input:focus ~ .modal-input-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-input-svg {
@@ -198,7 +174,7 @@ img {
 }
 
 .modal-form-input:focus ~ .modal-btn-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-form-submit-btn {
@@ -263,12 +239,12 @@ img {
   background-image: url("../images/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border-color: #2196f3;
+  background-color: #2196f3;
 }
 
 .checkbox-agreement-link {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 /* Кнопка CLOSE */
@@ -292,7 +268,7 @@ img {
 }
 
 .modal-close-btn-svg:hover {
-  fill: var(--accent-color);
+  fill: #2196f3;
   border-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -323,16 +299,16 @@ img {
 }
 
 .logo {
-  font-family: var(--logo-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--main-logo-color);
+  color: #000000;
 }
 
 .logo-element {
-  color: var(--element-logo-color);
+  color: #2196f3;
 }
 
 .navigation-list {
@@ -351,7 +327,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: #757575;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -369,12 +345,12 @@ img {
 .navigation-list-link:focus,
 .address-list-item-link:hover,
 .address-list-item-link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .header-mail-svg {
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: #757575;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -382,26 +358,26 @@ img {
 
 .header-phone-svg {
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: #757575;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-item-link:hover .header-mail-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .address-list-item-link:focus .header-mail-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .address-list-item-link:hover .header-phone-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .address-list-item-link:focus .header-phone-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .current-page-link {
@@ -504,7 +480,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: #757575;
 }
 
 .why-img {
@@ -512,7 +488,7 @@ img {
   justify-content: center;
   padding-bottom: 25px;
   padding-top: 25px;
-  background-color: var(--section-background-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
@@ -528,7 +504,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .what-we-do-subtitle {
@@ -567,7 +543,7 @@ img {
 }
 
 .team {
-  background-color: var(--section-background-color);
+  background-color: #f5f4fa;
 }
 
 .team-list {
@@ -593,7 +569,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .team-list-item-position {
@@ -603,7 +579,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: #757575;
 }
 
 .team-social-links-list {
@@ -639,7 +615,7 @@ img {
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .team-social-link:hover .team-social-icon,
@@ -696,7 +672,7 @@ img {
 
 .clients-list-item-link:hover .clients-icon,
 .clients-list-item-link:focus .clients-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 /* ПОРТФОЛИО */
@@ -739,7 +715,7 @@ img {
 .portfolio-button:focus {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   color: #ffffff;
 }
 
@@ -778,7 +754,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .portfolio-list-item-desc {
@@ -790,7 +766,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: #757575;
 }
 
 .portfolio-list-item-link:hover,
@@ -828,7 +804,7 @@ img {
 
 /* ПОДВАЛ САЙТА */
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: #2f303a;
 }
 
 .footer .container {
@@ -843,7 +819,7 @@ img {
 }
 
 .footer-studio {
-  color: var(--footer-logo-color);
+  color: #ffffff;
 }
 
 .contact-list {
@@ -908,7 +884,7 @@ img {
 
 .footer-social-link-list-link:hover,
 .footer-social-link-list-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .footer-subscribe {

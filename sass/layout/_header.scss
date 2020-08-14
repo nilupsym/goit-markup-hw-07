@@ -25,16 +25,16 @@
 }
 
 .logo {
-  font-family: var(--logo-font);
+  font-family: $logo-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--main-logo-color);
+  color: $main-logo-color;
 }
 
 .logo-element {
-  color: var(--element-logo-color);
+  color: $element-logo-color;
 }
 
 .navigation-list {
@@ -53,7 +53,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: $main-text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,12 +71,12 @@
 .navigation-list-link:focus,
 .address-list-item-link:hover,
 .address-list-item-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .header-mail-svg {
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: $main-text-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,25 +84,25 @@
 
 .header-phone-svg {
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: $main-text-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-item-link:hover .header-mail-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .address-list-item-link:focus .header-mail-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .address-list-item-link:hover .header-phone-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .address-list-item-link:focus .header-phone-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .current-page-link {

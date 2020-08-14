@@ -1,7 +1,7 @@
 /* ПОДВАЛ САЙТА */
 
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
 }
 
 .footer .container {
@@ -16,7 +16,7 @@
 }
 
 .footer-studio {
-  color: var(--footer-logo-color);
+  color: $footer-logo-color;
 }
 
 .contact-list {
@@ -31,7 +31,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: $footer-link-color;
 }
 
 .footer-tel {
@@ -81,7 +81,7 @@
 
 .footer-social-link-list-link:hover,
 .footer-social-link-list-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .footer-subscribe {
@@ -115,7 +115,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: $footer-link-color;
 }
 
 .footer-subscribe-btn {

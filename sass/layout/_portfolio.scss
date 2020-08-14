@@ -43,7 +43,7 @@
 
   border-radius: 4px;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 
   color: #ffffff;
 }
@@ -83,7 +83,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .portfolio-list-item-desc {
@@ -95,7 +95,7 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .portfolio-list-item-link:hover,
