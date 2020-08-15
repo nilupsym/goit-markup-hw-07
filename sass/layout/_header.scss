@@ -1,27 +1,27 @@
 /* ШАПКА САЙТА */
 .header {
   border-bottom: 1px solid #ececec;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .header-main-page {
   border: none;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .navigation {
   display: flex;
   align-items: center;
-}
 
-.navigation .logo {
-  margin-right: 85px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  .logo {
+    margin-right: 85px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo {
@@ -31,10 +31,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $main-logo-color;
-}
 
-.logo-element {
-  color: $element-logo-color;
+  &-element {
+    color: $element-logo-color;
+  }
 }
 
 .navigation-list {

@@ -39,10 +39,10 @@
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden .modal-form {
-  transform: translate(-50%, 50%);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, 50%);
+  }
 }
 
 .modal-form-title {
@@ -118,10 +118,6 @@
   border-color: $accent-color;
 }
 
-.modal-form-input:focus ~ .modal-input-svg {
-  fill: $accent-color;
-}
-
 .modal-input-svg {
   position: absolute;
   top: 50%;
@@ -129,6 +125,10 @@
   transform: translateY(-50%);
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form-input:focus ~ & {
+    fill: $accent-color;
+  }
 }
 
 .modal-form-input:focus ~ .modal-btn-svg {
@@ -153,10 +153,10 @@
 
   color: #ffffff;
   cursor: pointer;
-}
 
-.modal-form-submit-btn:hover {
-  background-color: #188ce8;
+  &:hover {
+    background-color: #188ce8;
+  }
 }
 
 .checkbox-input {
@@ -185,27 +185,28 @@
 
   position: relative;
   padding-left: 25px;
-}
 
-.checkbox label:after {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  margin-right: 8px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.checkbox input[type="checkbox"]:checked + label:after {
-  background-image: url("../images/icon-check.svg");
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $accent-color;
-  background-color: $accent-color;
+  & label:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & input[type="checkbox"]:checked + label:after {
+    background-image: url("../images/icon-check.svg");
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $accent-color;
+    background-color: $accent-color;
+  }
 }
 
 .checkbox-agreement-link {
@@ -221,19 +222,19 @@
   right: 8px;
   background-color: transparent;
   border: none;
-}
 
-.modal-close-btn-svg {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  fill: #000000;
-  background: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &-svg {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    fill: #000000;
+    background: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.modal-close-btn-svg:hover {
-  fill: $accent-color;
-  border-color: rgba(0, 0, 0, 0.1);
+    &:hover {
+      fill: $accent-color;
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+  }
 }

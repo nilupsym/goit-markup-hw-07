@@ -13,10 +13,10 @@
 .why-are-we-list-item {
   /* width: 270px; */
   width: calc((100% - 90px) / 4);
-}
 
-.why-are-we-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .subtitle {
